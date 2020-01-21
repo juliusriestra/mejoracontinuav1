@@ -1,0 +1,40 @@
+
+
+  Agregar pedidos desde Pase Pedido @AgregarPasePedido
+    1) Agregar pedido desde pase pedido {"Pais":"PE","Usuario":"011097308","Password":"1","CUV":"00006"}
+
+
+  0 passing (1m)
+  1 failing
+
+  1) Agregar pedidos desde Pase Pedido @AgregarPasePedido
+       Agregar pedido desde pase pedido {"Pais":"PE","Usuario":"011097308","Password":"1","CUV":"00006"}:
+     Field "{"id":"txtCUV"}" was not found by text|CSS|XPath
+  
+  Scenario Steps:
+  
+  - I.fillField({"id":"txtCUV"}, "00006") at Object.IngresarCuv (src\features\Pedidos\PasePedidoModificar\PasePedidoModificar.module.js:14:19)
+  - I.wait(5) at Object.SeleccionarIngresarPedido (src\features\Pedidos\PasePedidoModificar\PasePedidoModificar.module.js:10:7)
+  - I.click({"xpath":"//*[@id=\"contentmain\"]/div[1]/div[4]/div[1]/div[3]/a"}) at Object.SeleccionarIngresarPedido (src\features\Pedidos\PasePedidoModificar\PasePedidoModificar.module.js:9:19)
+  - I.click({"xpath":"//*[@id=\"PopShowroomVenta\"]/div/a"}) at Object.SiPopUp_Cerrar (src\features\Login\Login.module.js:54:21)
+  - I.grabValueFrom({"id":"hdEventoIDShowRoomVenta"}) at Object.SiPopUp_Cerrar (src\features\Login\Login.module.js:52:32)
+  - I.seeInCurrentUrl("/Bienvenida") at Object.ValidacionFinalLogin (src\features\Login\Login.module.js:48:19)
+  - I.click({"id":"btnLogin"}) at Object.ClickBotonLogin (src\features\Login\Login.module.js:41:19)
+  - I.fillField({"id":"txtContrasenia"}, "1") at Object.IngresarCredenciales (src\features\Login\Login.module.js:36:19)
+  - I.fillField({"id":"txtUsuario"}, "011097308") at Object.IngresarCredenciales (src\features\Login\Login.module.js:35:19)
+  - I.selectOption({"name":"CodigoISO"}, "PE") at Object.IngresarCredenciales (src\features\Login\Login.module.js:34:19)
+  - I.seeElement({"id":"btnLogin"}) at Object.ValidacionInicialLogin (src\features\Login\Login.module.js:28:19)
+  - I.seeElement({"id":"txtContrasenia"}) at Object.ValidacionInicialLogin (src\features\Login\Login.module.js:27:19)
+  - I.seeElement({"id":"txtUsuario"}) at Object.ValidacionInicialLogin (src\features\Login\Login.module.js:26:19)
+  - I.seeElement({"name":"CodigoISO"}) at Object.ValidacionInicialLogin (src\features\Login\Login.module.js:25:19)
+  - I.see("¡Bienvenida") at Object.ValidacionInicialLogin (src\features\Login\Login.module.js:24:19)
+  - I.amOnPage("/") at Object.Constructor (src\features\Login\Login.module.js:10:19)
+  
+  
+
+
+
+[mochawesome] Report JSON saved to D:\automation\somosbelcorp\report\SomosBelcorp_2019-12-17T192305-0500.json
+
+[mochawesome] Report HTML saved to D:\automation\somosbelcorp\report\SomosBelcorp_2019-12-17T192305-0500.html
+
